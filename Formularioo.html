@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Supermercados Bravo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .container h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.superbravo.com.do/wp-content/uploads/2017/06/BravoWeb.png" alt="Supermercados Bravo">
+        <nav>
+            <a href="Index.html">Inicio</a>
+            <a href="Informacion.html">Sobre Bravo</a>
+            <a href="Productoss.html">Productos</a>
+            <a href="Ofertas.html">Ofertas</a>
+            <a href="Formularioo.html">Formulario</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Formulario de Contacto</h2>
+        <form action="enviar_formulario.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

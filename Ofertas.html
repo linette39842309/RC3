@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas - Supermercados Bravo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        img {
+            width: 80px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.superbravo.com.do/wp-content/uploads/2017/06/BravoWeb.png" alt="Supermercados Bravo">
+        <nav>
+          <a href="Index.html">Inicio</a>
+            <a href="Informacion.html">Sobre Bravo</a>
+            <a href="productoss.html">Productos</a>
+            <a href="Ofertas.html">Ofertas</a>
+            <a href="Formularioo.html">Formulario</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Ofertas Especiales</h1>
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Imagen</th>
+                <th>Precio Normal</th>
+                <th>Precio en Oferta</th>
+            </tr>
+            <tr>
+                <td>Arroz Premium </td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHnJx0xEodu3byBA1iAqylFsfERc_Zmq5yg&s" alt="Arroz"></td>
+                <td>$350.00</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td>Aceite Vegetal </td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyk-R__SVrM4XHGCpBPkZhTh3qIILYxccMPQ&s" alt="Aceite"></td>
+                <td>$500.00</td>
+                <td>$350.50</td>
+            </tr>
+            <tr>
+                <td>Leche en Polvo </td>
+                <td><img src="https://pbs.twimg.com/media/Eg6OSWaWkAYIfRC.jpg:large" alt="Leche"></td>
+                <td>$470.00</td>
+                <td>$360.00</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Supermercados Bravo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 60px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: red;
+            color: white;
+        }
+        img {
+            width: 80px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.superbravo.com.do/wp-content/uploads/2017/06/BravoWeb.png" alt="Supermercados Bravo">
+        <nav>
+            <a href="Index.html">Inicio</a>
+            <a href="Informacion.html">Sobre Bravo</a>
+            <a href="Productoss.html">Productos</a>
+            <a href="Ofertas.html">Ofertas</a>
+            <a href="Formularioo.html">Formulario</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Productos</h2>
+        <table>
+            <tr>
+                <th>Imagen</th>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHnJx0xEodu3byBA1iAqylFsfERc_Zmq5yg&s" alt="Producto 1"></td>
+                <td>Arroz Premium</td>
+                <td>$350.00</td>
+            </tr>
+            <tr>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacbVNN_oQghEuHzY09f0KZvYBznEXwLiugBl7QKGwXxJqg73HseINJwkukUJ7PTxIC00&usqp=CAU" alt="Producto 2"></td>
+                <td>Leche Entera</td>
+                <td>$99.00</td>
+            </tr>
+            <tr>
+                <td><img src="https://www.superbravo.com.do/wp-content/uploads/2021/02/FOTO-DEL-PAN-scaled.jpg" alt="Producto 3"></td>
+                <td>Pan Integral</td>
+                <td>$100.00</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
